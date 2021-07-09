@@ -1,11 +1,13 @@
 import React from 'react'
-import {Grid} from '@material-ui/core'
-import Product from './Product'
+import {Grid, requirePropFactory} from '@material-ui/core'
+import Product from './Product/Product'
+
+
 
 
 const products=[
-    {id:1,name:'Shoes',description:'Running shoes', price:'$23'},
-    {id:2,name:'Macbook',description:'Apple',price:'$30'}
+    {id:1,name:'Shoes',description:'Running shoes', price:'$23',src:("https://static.bhphoto.com/images/images500x500/microsoft_qwu_00001_12_3_multi_touch_surface_pro_1573476274_1506678.jpg")},
+    {id:2,name:'Macbook',description:'Apple',price:'$30',src:("https://static.bhphoto.com/images/images500x500/microsoft_qwu_00001_12_3_multi_touch_surface_pro_1573476274_1506678.jpg")}
 ]
 
 const Products = () => {
